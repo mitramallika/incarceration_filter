@@ -1,6 +1,7 @@
 let result;
-let data = [{
-		"name": "Albany County",
+let data = [
+	{
+		"county": "Albany County",
 		"total_pop": "308,598",
 		"total_pop_15to64": "213,035",
 		"female_pop_15to64": "108,124",
@@ -12,7 +13,7 @@ let data = [{
 		"white_pop_15to64": "157,410"
   },
 	{
-		"name": "Allegany County",
+		"county": "Allegany County",
 		"total_pop": "47,372",
 		"total_pop_15to64": "31,191",
 		"female_pop_15to64": "15,200",
@@ -24,7 +25,7 @@ let data = [{
 		"white_pop_15to64": "29,470"
   },
 	{
-		"name": "Broome County",
+		"county": "Broome County",
 		"total_pop": "196,292",
 		"total_pop_15to64": "129,666",
 		"female_pop_15to64": "64,513",
@@ -36,7 +37,7 @@ let data = [{
 		"white_pop_15to64": "109,356"
   },
 	{
-		"name": "Cattaraugus County",
+		"county": "Cattaraugus County",
 		"total_pop": "78,006",
 		"total_pop_15to64": "49,835",
 		"female_pop_15to64": "24,807",
@@ -48,7 +49,7 @@ let data = [{
 		"white_pop_15to64": "45,828"
   },
 	{
-		"name": "Cayuga County",
+		"county": "Cayuga County",
 		"total_pop": "78,319",
 		"total_pop_15to64": "51,877",
 		"female_pop_15to64": "24,564",
@@ -60,7 +61,7 @@ let data = [{
 		"white_pop_15to64": "46,874"
   },
 	{
-		"name": "Chautauqua County",
+		"county": "Chautauqua County",
 		"total_pop": "130,756",
 		"total_pop_15to64": "84,497",
 		"female_pop_15to64": "41,786",
@@ -72,7 +73,7 @@ let data = [{
 		"white_pop_15to64": "74,652"
   },
 	{
-		"name": "Chemung County",
+		"county": "Chemung County",
 		"total_pop": "87,030",
 		"total_pop_15to64": "56,275",
 		"female_pop_15to64": "27,695",
@@ -84,7 +85,7 @@ let data = [{
 		"white_pop_15to64": "49,062"
   },
 	{
-		"name": "Chenango County",
+		"county": "Chenango County",
 		"total_pop": "48,799",
 		"total_pop_15to64": "31,046",
 		"female_pop_15to64": "15,373",
@@ -96,7 +97,7 @@ let data = [{
 		"white_pop_15to64": "29,699"
   },
 	{
-		"name": "Clinton County",
+		"county": "Clinton County",
 		"total_pop": "81,032",
 		"total_pop_15to64": "56,270",
 		"female_pop_15to64": "26,688",
@@ -108,7 +109,7 @@ let data = [{
 		"white_pop_15to64": "50,190"
   },
 	{
-		"name": "Columbia County",
+		"county": "Columbia County",
 		"total_pop": "61,549",
 		"total_pop_15to64": "39,385",
 		"female_pop_15to64": "19,272",
@@ -120,7 +121,7 @@ let data = [{
 		"white_pop_15to64": "34,511"
   },
 	{
-		"name": "Cortland County",
+		"county": "Cortland County",
 		"total_pop": "48,294",
 		"total_pop_15to64": "33,250",
 		"female_pop_15to64": "16,926",
@@ -132,7 +133,7 @@ let data = [{
 		"white_pop_15to64": "31,112"
   },
 	{
-		"name": "Delaware County",
+		"county": "Delaware County",
 		"total_pop": "45,948",
 		"total_pop_15to64": "29,078",
 		"female_pop_15to64": "14,235",
@@ -144,7 +145,7 @@ let data = [{
 		"white_pop_15to64": "26,834"
   },
 	{
-		"name": "Dutchess County",
+		"county": "Dutchess County",
 		"total_pop": "295,309",
 		"total_pop_15to64": "201,409",
 		"female_pop_15to64": "99,187",
@@ -156,7 +157,7 @@ let data = [{
 		"white_pop_15to64": "146,049"
   },
 	{
-		"name": "Erie County",
+		"county": "Erie County",
 		"total_pop": "924,122",
 		"total_pop_15to64": "613,205",
 		"female_pop_15to64": "310,756",
@@ -168,7 +169,7 @@ let data = [{
 		"white_pop_15to64": "470,706"
   },
 	{
-		"name": "Essex County",
+		"county": "Essex County",
 		"total_pop": "38,196",
 		"total_pop_15to64": "25,014",
 		"female_pop_15to64": "11,553",
@@ -180,7 +181,7 @@ let data = [{
 		"white_pop_15to64": "22,632"
   },
 	{
-		"name": "Franklin County",
+		"county": "Franklin County",
 		"total_pop": "50,609",
 		"total_pop_15to64": "34,455",
 		"female_pop_15to64": "14,702",
@@ -192,7 +193,7 @@ let data = [{
 		"white_pop_15to64": "27,635"
   },
 	{
-		"name": "Fulton County",
+		"county": "Fulton County",
 		"total_pop": "53,853",
 		"total_pop_15to64": "35,024",
 		"female_pop_15to64": "17,250",
@@ -204,7 +205,7 @@ let data = [{
 		"white_pop_15to64": "32,820"
   },
 	{
-		"name": "Genesee County",
+		"county": "Genesee County",
 		"total_pop": "58,591",
 		"total_pop_15to64": "38,415",
 		"female_pop_15to64": "18,847",
@@ -216,7 +217,7 @@ let data = [{
 		"white_pop_15to64": "35,146"
   },
 	{
-		"name": "Greene County",
+		"county": "Greene County",
 		"total_pop": "47,649",
 		"total_pop_15to64": "31,329",
 		"female_pop_15to64": "14,479",
@@ -228,7 +229,7 @@ let data = [{
 		"white_pop_15to64": "26,466"
   },
 	{
-		"name": "Hamilton County",
+		"county": "Hamilton County",
 		"total_pop": "4,704",
 		"total_pop_15to64": "2,841",
 		"female_pop_15to64": "1,412",
@@ -240,7 +241,7 @@ let data = [{
 		"white_pop_15to64": "2,728"
   },
 	{
-		"name": "Herkimer County",
+		"county": "Herkimer County",
 		"total_pop": "62,688",
 		"total_pop_15to64": "40,006",
 		"female_pop_15to64": "19,935",
@@ -252,7 +253,7 @@ let data = [{
 		"white_pop_15to64": "38,272"
   },
 	{
-		"name": "Jefferson County",
+		"county": "Jefferson County",
 		"total_pop": "116,301",
 		"total_pop_15to64": "77,514",
 		"female_pop_15to64": "35,262",
@@ -264,7 +265,7 @@ let data = [{
 		"white_pop_15to64": "63,725"
   },
 	{
-		"name": "Lewis County",
+		"county": "Lewis County",
 		"total_pop": "26,836",
 		"total_pop_15to64": "17,201",
 		"female_pop_15to64": "8,382",
@@ -276,7 +277,7 @@ let data = [{
 		"white_pop_15to64": "16,572"
   },
 	{
-		"name": "Livingston County",
+		"county": "Livingston County",
 		"total_pop": "64,514",
 		"total_pop_15to64": "44,487",
 		"female_pop_15to64": "21,689",
@@ -288,7 +289,7 @@ let data = [{
 		"white_pop_15to64": "40,317"
   },
 	{
-		"name": "Madison County",
+		"county": "Madison County",
 		"total_pop": "71,718",
 		"total_pop_15to64": "48,546",
 		"female_pop_15to64": "24,487",
@@ -300,7 +301,7 @@ let data = [{
 		"white_pop_15to64": "45,435"
   },
 	{
-		"name": "Monroe County",
+		"county": "Monroe County",
 		"total_pop": "748,504",
 		"total_pop_15to64": "499,258",
 		"female_pop_15to64": "255,183",
@@ -312,7 +313,7 @@ let data = [{
 		"white_pop_15to64": "360,342"
   },
 	{
-		"name": "Montgomery County",
+		"county": "Montgomery County",
 		"total_pop": "49,556",
 		"total_pop_15to64": "31,427",
 		"female_pop_15to64": "15,738",
@@ -324,7 +325,7 @@ let data = [{
 		"white_pop_15to64": "26,229"
   },
 	{
-		"name": "New York County",
+		"county": "New York County",
 		"total_pop": "8,582,459",
 		"total_pop_15to64": "5,891,547",
 		"female_pop_15to64": "3,053,820",
@@ -336,7 +337,7 @@ let data = [{
 		"white_pop_15to64": "1,894,037"
   },
 	{
-		"name": "Niagara County",
+		"county": "Niagara County",
 		"total_pop": "212,540",
 		"total_pop_15to64": "139,772",
 		"female_pop_15to64": "70,518",
@@ -348,7 +349,7 @@ let data = [{
 		"white_pop_15to64": "122,135"
   },
 	{
-		"name": "Oneida County",
+		"county": "Oneida County",
 		"total_pop": "232,014",
 		"total_pop_15to64": "150,095",
 		"female_pop_15to64": "73,205",
@@ -360,7 +361,7 @@ let data = [{
 		"white_pop_15to64": "125,219"
   },
 	{
-		"name": "Onondaga County",
+		"county": "Onondaga County",
 		"total_pop": "468,233",
 		"total_pop_15to64": "311,608",
 		"female_pop_15to64": "159,557",
@@ -372,7 +373,7 @@ let data = [{
 		"white_pop_15to64": "245,147"
   },
 	{
-		"name": "Ontario County",
+		"county": "Ontario County",
 		"total_pop": "109,431",
 		"total_pop_15to64": "71,071",
 		"female_pop_15to64": "35,717",
@@ -384,7 +385,7 @@ let data = [{
 		"white_pop_15to64": "64,854"
   },
 	{
-		"name": "Orange County",
+		"county": "Orange County",
 		"total_pop": "377,544",
 		"total_pop_15to64": "248,690",
 		"female_pop_15to64": "122,246",
@@ -396,7 +397,7 @@ let data = [{
 		"white_pop_15to64": "163,143"
   },
 	{
-		"name": "Orleans County",
+		"county": "Orleans County",
 		"total_pop": "41,512",
 		"total_pop_15to64": "27,893",
 		"female_pop_15to64": "13,762",
@@ -408,7 +409,7 @@ let data = [{
 		"white_pop_15to64": "24,092"
   },
 	{
-		"name": "Oswego County",
+		"county": "Oswego County",
 		"total_pop": "119,899",
 		"total_pop_15to64": "81,079",
 		"female_pop_15to64": "40,094",
@@ -420,7 +421,7 @@ let data = [{
 		"white_pop_15to64": "77,016"
   },
 	{
-		"name": "Otsego County",
+		"county": "Otsego County",
 		"total_pop": "60,676",
 		"total_pop_15to64": "40,900",
 		"female_pop_15to64": "20,922",
@@ -432,7 +433,7 @@ let data = [{
 		"white_pop_15to64": "37,376"
   },
 	{
-		"name": "Putnam County",
+		"county": "Putnam County",
 		"total_pop": "99,473",
 		"total_pop_15to64": "67,692",
 		"female_pop_15to64": "33,461",
@@ -444,7 +445,7 @@ let data = [{
 		"white_pop_15to64": "54,291"
   },
 	{
-		"name": "Rensselaer County",
+		"county": "Rensselaer County",
 		"total_pop": "159,850",
 		"total_pop_15to64": "108,462",
 		"female_pop_15to64": "54,073",
@@ -456,7 +457,7 @@ let data = [{
 		"white_pop_15to64": "92,468"
   },
 	{
-		"name": "Rockland County",
+		"county": "Rockland County",
 		"total_pop": "325,655",
 		"total_pop_15to64": "201,624",
 		"female_pop_15to64": "101,373",
@@ -468,7 +469,7 @@ let data = [{
 		"white_pop_15to64": "122,313"
   },
 	{
-		"name": "St. Lawrence County",
+		"county": "St. Lawrence County",
 		"total_pop": "110,803",
 		"total_pop_15to64": "74,453",
 		"female_pop_15to64": "35,491",
@@ -480,7 +481,7 @@ let data = [{
 		"white_pop_15to64": "68,210"
   },
 	{
-		"name": "Saratoga County",
+		"county": "Saratoga County",
 		"total_pop": "226,551",
 		"total_pop_15to64": "150,778",
 		"female_pop_15to64": "75,227",
@@ -492,7 +493,7 @@ let data = [{
 		"white_pop_15to64": "138,208"
   },
 	{
-		"name": "Schenectady County",
+		"county": "Schenectady County",
 		"total_pop": "155,089",
 		"total_pop_15to64": "102,231",
 		"female_pop_15to64": "51,687",
@@ -504,7 +505,7 @@ let data = [{
 		"white_pop_15to64": "78,011"
   },
 	{
-		"name": "Schoharie County",
+		"county": "Schoharie County",
 		"total_pop": "31,463",
 		"total_pop_15to64": "20,655",
 		"female_pop_15to64": "10,252",
@@ -516,7 +517,7 @@ let data = [{
 		"white_pop_15to64": "19,389"
   },
 	{
-		"name": "Schuyler County",
+		"county": "Schuyler County",
 		"total_pop": "18,020",
 		"total_pop_15to64": "11,713",
 		"female_pop_15to64": "5,818",
@@ -528,7 +529,7 @@ let data = [{
 		"white_pop_15to64": "11,209"
   },
 	{
-		"name": "Seneca County",
+		"county": "Seneca County",
 		"total_pop": "34,811",
 		"total_pop_15to64": "22,904",
 		"female_pop_15to64": "10,454",
@@ -540,7 +541,7 @@ let data = [{
 		"white_pop_15to64": "20,206"
   },
 	{
-		"name": "Steuben County",
+		"county": "Steuben County",
 		"total_pop": "97,495",
 		"total_pop_15to64": "62,304",
 		"female_pop_15to64": "30,845",
@@ -552,7 +553,7 @@ let data = [{
 		"white_pop_15to64": "58,854"
   },
 	{
-		"name": "Suffolk County",
+		"county": "Suffolk County",
 		"total_pop": "1,498,947",
 		"total_pop_15to64": "998,279",
 		"female_pop_15to64": "498,083",
@@ -564,7 +565,7 @@ let data = [{
 		"white_pop_15to64": "684,170"
   },
 	{
-		"name": "Sullivan County",
+		"county": "Sullivan County",
 		"total_pop": "75,136",
 		"total_pop_15to64": "48,790",
 		"female_pop_15to64": "23,400",
@@ -576,7 +577,7 @@ let data = [{
 		"white_pop_15to64": "35,367"
   },
 	{
-		"name": "Tioga County",
+		"county": "Tioga County",
 		"total_pop": "49,323",
 		"total_pop_15to64": "31,472",
 		"female_pop_15to64": "15,684",
@@ -588,7 +589,7 @@ let data = [{
 		"white_pop_15to64": "30,209"
   },
 	{
-		"name": "Tompkins County",
+		"county": "Tompkins County",
 		"total_pop": "104,283",
 		"total_pop_15to64": "78,091",
 		"female_pop_15to64": "39,357",
@@ -600,7 +601,7 @@ let data = [{
 		"white_pop_15to64": "60,108"
   },
 	{
-		"name": "Ulster County",
+		"county": "Ulster County",
 		"total_pop": "179,952",
 		"total_pop_15to64": "120,901",
 		"female_pop_15to64": "59,627",
@@ -612,7 +613,7 @@ let data = [{
 		"white_pop_15to64": "97,210"
   },
 	{
-		"name": "Warren County",
+		"county": "Warren County",
 		"total_pop": "64,448",
 		"total_pop_15to64": "41,583",
 		"female_pop_15to64": "21,032",
@@ -624,7 +625,7 @@ let data = [{
 		"white_pop_15to64": "39,460"
   },
 	{
-		"name": "Washington County",
+		"county": "Washington County",
 		"total_pop": "62,253",
 		"total_pop_15to64": "41,231",
 		"female_pop_15to64": "19,250",
@@ -636,7 +637,7 @@ let data = [{
 		"white_pop_15to64": "37,871"
   },
 	{
-		"name": "Wayne County",
+		"county": "Wayne County",
 		"total_pop": "91,359",
 		"total_pop_15to64": "59,427",
 		"female_pop_15to64": "29,587",
@@ -648,7 +649,7 @@ let data = [{
 		"white_pop_15to64": "54,352"
   },
 	{
-		"name": "Westchester County",
+		"county": "Westchester County",
 		"total_pop": "976,103",
 		"total_pop_15to64": "639,879",
 		"female_pop_15to64": "325,872",
@@ -660,7 +661,7 @@ let data = [{
 		"white_pop_15to64": "339,613"
   },
 	{
-		"name": "Wyoming County",
+		"county": "Wyoming County",
 		"total_pop": "40,957",
 		"total_pop_15to64": "28,053",
 		"female_pop_15to64": "12,079",
@@ -672,7 +673,7 @@ let data = [{
 		"white_pop_15to64": "24,458"
   },
 	{
-		"name": "Yates County",
+		"county": "Yates County",
 		"total_pop": "25,065",
 		"total_pop_15to64": "15,729",
 		"female_pop_15to64": "8,076",

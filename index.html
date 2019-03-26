@@ -25,22 +25,38 @@
   <body>
     <!-- YOUR CONTENT GOES HERE -->
     <h1>Headline about incarceration trends in NY counties</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <h2>See what this filter does</h2>
+    <div class="story">
+
+    </div>
+
+    <h2>Choose your county from the dropdown menu.</h2>
+
     <form>
-      <select id="county"></select>
+      <select id="character"></select>
       <br><br>
       <input id="enter" type="submit">
     </form>
-    <h3>The information about each county should appear below</h3>
-    <div id="county_info"></div>
-    <script type="text/html" id="county_template">
-      You selected <%= county.name %>. The total population of incarcerated people in this county is <%= county.total_pop %>. The total total population of incarcerated people in this county between the ages of 15 and 64 is <=%county.total_pop_15to64 %>. The total total population of incarcerated females in this county between the ages of 15 and 64 is <=%county.female_pop_15to64 %>. The total total population of incarcerated males in this county between the ages of 15 and 64 is <=%county.male_pop_15to64 %>. The total total population of incarcerated Asian people in this county between the ages of 15 and 64 is <=%county.asian_pop_15to64 %>. The total total population of incarcerated black people in this county between the ages of 15 and 64 is <=%county.black_pop_15to64 %>. The total total population of incarcerated latino people in this county between the ages of 15 and 64 is <=%county.latino_pop_15to64 %>. The total total population of incarcerated Native American people in this county between the ages of 15 and 64 is <=%county.native_pop_15to64 %>. The total total population of incarcerated white people in this county between the ages of 15 and 64 is <=%county.white_pop_15to64 %>.
-</script>
+
+
+    <h3>The information about each county should appear below.</h3>
+
+    <!-- templating occurs here -->
+
+    <div id="info"></div>
+    <script type="text/html" id="place_template">
+      <p>You selected <%= place.county %>.</p>
+  <p>The total population of incarcerated people in this county is <%= place.total_pop %>.</p>
+  <p>The total total population of incarcerated females in this county is <%= place.female_pop_15to64 %>.</p>
+  <p>The total total population of incarcerated males in this county is <%= place.male_pop_15to64 %>.</p>
+  <p>The total population of incarcerated Asian people in this county is <%= place.asian_pop_15to64 %>.</p>
+  <p>The total population of incarcerated black people in this county is <%= place.black_pop_15to64 %>.</p>
+  <p>The total population of incarcerated latino people in this county is <%= place.latino_pop_15to64 %>.</p>
+  <p>The total population of incarcerated Native American people in this county is <%= place.native_pop_15to64 %>.</p>
+  <p>The total population of incarcerated white people in this county is <%= place.white_pop_15to64 %>.</p>
+  </script>
 
     <script type="text/html" id="select_template">
-      <option value="<%= name %>"><%= name %></option>
+      <option value="<%= county %>"><%= county %></option>
             </script>
 
     <!-- the jQuery library. You need this to be able to use jQuery ($) -->
@@ -48,7 +64,13 @@
 
     <!-- Your javascript should be called here -->
     <script src="main.js"></script>
+
+    <!-- Your data should be called here -->
     <script src="data.js"></script>
+
+    <!-- link to lodash cdn -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"></script>
+
   </body>
 
 </html>
